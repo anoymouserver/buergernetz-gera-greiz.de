@@ -1,0 +1,27 @@
+.text-hyphens {
+  /* requires <html lang="de"> or similar */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.d-target-block:target {
+  display: block !important;
+}
+
+a.plink {
+  opacity: 0;
+  font-size: 0.75em;
+  text-decoration: none;
+  padding-left: 1ch;
+}
+a.plink::before {
+  content: '\00B6';
+}
+.plink:focus,
+h2:hover > .plink,
+h3:hover > .plink,
+h4:hover > .plink,
+h5:hover > .plink {
+  opacity: 1;
+  transition: opacity 200ms ease-in 300ms;
+}
