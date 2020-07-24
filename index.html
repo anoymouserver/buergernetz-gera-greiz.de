@@ -25,15 +25,36 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
 </head>
 <body>
-  <header class="bg-light py-5 text-center shadow-sm">
+  <header class="bg-light pt-5 pb-4 text-center">
     <div class="container">
       <img class="pb-3" src="./assets/img/logo.png" alt="" style="width:17.5rem;max-width:75%;transform:translateY(-2%) translateX(9%)"/>
       <h1 class="display-4">Bürgernetz Gera&#x2011;Greiz e.V.</h1>
     </div>
   </header>
 
+  <nav id="navbar" class="navbar sticky-top navbar-dark bg-secondary mb-4 navbar-expand-sm shadow-sm">
+    <div class="container justify-content-end lead">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#_">Aktuelles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#_" aria-current="page">Verein</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#_">&lt;name&gt;space</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <main class="container">
-    <div class="row row-cols-1 row-cols-lg-3 mt-4 mx-0" id="info">
+    <div class="row row-cols-1 row-cols-lg-2 mt-4 mx-0" id="info">
       <section class="col p-3 text-hyphens">
         <h2>Vereinssatzung</h2>
         <p class="lead">Die aktuellen Fassungen unserer Satzung und der dazugehörigen Beitragsordnung kannst du unter folgenden Links herunterladen.</p>
@@ -51,7 +72,7 @@
         <p><a class="btn btn-lg btn-outline-primary w-100" type="application/pdf" href="./assets/doc/Mitgliedsantrag.pdf" role="button">Antrag</a></p>
       </section>
 
-      <section class="col p-3">
+      <!--<section class="col p-3">
         <h2>Vorstand</h2>
         <dl class="row lead">
           <dt class="col-md-6 col-lg-12">Vorsitz</dt>
@@ -63,7 +84,7 @@
           <dt class="col-md-6 col-lg-12">Kassenführung</dt>
           <dd class="col-md-6 col-lg-12">Matthias Drobny</dd>
         </dl>
-      </section>
+      </section>-->
     </div>
 
     <section class="mt-4 p-3 rounded shadow-sm text-hyphens" id="about">

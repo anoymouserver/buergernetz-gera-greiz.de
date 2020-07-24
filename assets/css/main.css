@@ -25,3 +25,10 @@ h5:hover > .plink {
   opacity: 1;
   transition: opacity 200ms ease-in 300ms;
 }
+
+.navbar-toggler:focus ~ .navbar-collapse.collapse,
+.navbar-toggler:hover ~ .navbar-collapse.collapse,
+.navbar-collapse.collapse:focus-within,
+.navbar-collapse.collapse:hover {
+  display: unset;
+}
